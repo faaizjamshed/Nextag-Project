@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* No border for clean design */
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the space without distortion */
+}
+
+.card-body {
+    text-align: center; /* Center-align text */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #6c757d; /* Muted text color */
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d4af37; /* Gold-like color for luxury feel */
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.card-img-top:hover {
+    filter: brightness(0.8); /* Slight darkening effect */
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f0c14b; /* Gold-like color */
+}
+/* Navbar Styling */
+.navbar {
+    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Smooth background and shadow transition */
+    background-color: transparent; /* Default transparent */
+    box-shadow: none; /* No shadow initially */
+}
+
+.navbar.scrolled {
+    background-color: #333; /* Dark background on scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on scroll */
+}
+
+/* Navbar Brand */
+.navbar-brand img {
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2); 
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #f8f9fa; 
+    font-weight: 500; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700; 
+    transform: translateY(-3px); 
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+    color: #FFD700; 
+    font-weight: 600;
+}
+.dropdown-menu {
+    background-color: #333; /* Dark background for the dropdown */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded edges */
+}
+
+.dropdown-item {
+    color: #f8f9fa; /* Light text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #eef106b9; /* Gold background on hover */
+    color: #333; /* Dark text on hover */
+}

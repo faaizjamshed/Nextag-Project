@@ -1,0 +1,231 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background\ image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f0c14b;
+}
+
+.navbar {
+    transition: background-color 0.5s ease, box-shadow 0.5s ease; 
+    background-color: transparent; 
+    box-shadow: none; 
+}
+
+.navbar.scrolled {
+    background-color: #333; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+.navbar-brand img {
+    transition: transform 0.3s ease; 
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2); 
+}
+
+
+.navbar-nav .nav-link {
+    color: #f8f9fa; 
+    font-weight: 500; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #BB8354; 
+    transform: translateY(-3px); 
+}
+
+
+.navbar-nav .nav-link.active {
+    color:#BB8354; 
+    /* font-weight: 600; */
+}
+.dropdown-menu {
+    background-color: #333; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+.dropdown-item {
+    color: #f8f9fa; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #BB8354; 
+    color: #333; 
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-img-top {
+    height: 250px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image fits within the container */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+/* Hover effect for selected card */
+.product-card:hover .card {
+    transform: scale(1.05); /* Slightly enlarge the hovered card */
+    z-index: 10; /* Bring the hovered card to the front */
+}
+
+/* Blur other cards */
+.product-row:hover .product-card:not(:hover) .card {
+    filter: blur(4px); /* Apply blur to non-hovered cards */
+    opacity: 0.6; /* Slightly fade non-hovered cards */
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+
+
+footer {
+    font-size: 0.9rem;
+}
+.animated-form {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-form.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.clr{
+    background-color: rgb(245, 209, 120)!important;
+}
+
+
+
+/* Card Styling */
+.brand-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.brand-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: contain;
+    background-color: #f8f9fa; /* Neutral background for logos */
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.brand-card:hover .card-title {
+    color: #FFD700; /* Accent color */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+.reviewcard {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.butn a{
+    text-decoration: none;
+    color: black;
+}
+.butn a:hover{
+   
+    color: white;
+}
+
+.reviewcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reviewauthor {
+    font-weight: bold;
+}
+
+.reviewtext {
+    font-style: italic;
+}
+
+.stars {
+    color: #f4b400;
+}
+
+.reviewimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
